@@ -1,3 +1,53 @@
 /* BEGIN CODE HERE */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+}
+
+ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 5px 20px;
+    border: 1px transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color:aliceblue;
+    color:blue;
+}
+
+ul li.active a {
+    background-color: aliceblue;
+    color: blue;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+image-1.jpg{
+    max-height: 50%;
+    width: auto;
+}
+
+image-2.jpg{
+    max-width: auto;
+    max-height: auto;
+}
+
+image-3.jpg{
+    max-width: auto;
+    max-height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* END CODE HERE */
