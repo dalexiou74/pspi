@@ -24,25 +24,40 @@ ul li.active a {
     color: blue;
 }
 
+header{
+    height: 150px;
+}
+
 .logo img{
     float: left;
-    width: 150px;
-    height: auto;
+    width: 250px;
+    height: 58px;
 }
 
 image-1.jpg{
-    max-height: 50%;
-    width: auto;
+    height: 400px;
+    width: 600px;
 }
 
 image-2.jpg{
-    max-width: auto;
-    max-height: auto;
+    width: 300px;
+    height: 200px;
 }
 
 image-3.jpg{
-    max-width: auto;
-    max-height: auto;
+    width: 300px;
+    height: 200px;
+}
+
+footer{
+    height: 100px;
+    background-color: none;
+    color: #fff;
+}
+
+footer p{
+    background-color: #000;
+    color:black;
 }
 
 .main{

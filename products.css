@@ -1,3 +1,43 @@
 /* BEGIN CODE HERE */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+}
+
+ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 5px 20px;
+    border: 1px transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color:aliceblue;
+    color:blue;
+}
+
+ul li.active a {
+    background-color: aliceblue;
+    color: blue;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+button{
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 40px;
+    font-size: medium;
+    position: relative;
+    transition: transform 0.3s;
+}
+
 /* END CODE HERE */
