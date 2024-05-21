@@ -29,6 +29,22 @@ ul li.active a {
     margin: auto;
 }
 
+.logo img{
+    float: left;
+    width: 250px;
+    height: 58px;
+}
+
+header{
+    height: 150px;
+}
+
+footer p{
+    height: 100px;
+    background-color:#fff;
+    color: #000;
+}
+
 button{
     background-color: black;
     color: aliceblue;
@@ -38,6 +54,39 @@ button{
     font-size: medium;
     position: relative;
     transition: transform 0.3s;
+}
+
+h1 tr{
+    width: 1200px;
+}
+
+h2 tr{
+    width: 1200px;
+}
+
+div label inputname{
+    text-align: center;
+    display: inline-block;
+}
+
+div label inputproductionyear{
+    text-align: center;
+    display: inline-block;
+}
+
+div label inputprice{
+    text-align: center;
+    display: inline-block;
+}
+
+div label inputcolor{
+    text-align: center;
+    display: inline-block;
+}
+
+div label inputsize{
+    text-align: center;
+    display: inline-block;
 }
 
 /* END CODE HERE */
