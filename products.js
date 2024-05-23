@@ -1,10 +1,13 @@
 const api = "http://127.0.0.1:5000";
 
-window.onload = () => {
-    // BEGIN CODE HERE
-
-    // END CODE HERE
-}
+window.onload = function() {
+  const currentPath = window.location.pathname;
+  if (currentPath.includes('homepage')) {
+    document.getElementById('home-link').classList.add('active');
+  } else if (currentPath.includes('products')) {
+    document.getElementById('products-link').classList.add('active');
+  }
+};
 
 searchButtonOnClick = () => {
     // BEGIN CODE HERE
