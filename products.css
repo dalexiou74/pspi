@@ -39,9 +39,9 @@ header{
     height: 150px;
 }
 
-footer p{
+footer {
     height: 100px;
-    background-color:#fff;
+    background-color: #fff;
     color: #000;
 }
 
@@ -88,5 +88,13 @@ div label inputsize{
     text-align: center;
     display: inline-block;
 }
+
+
+.form-control {
+  max-width: 300px; 
+  margin-bottom: 0px;
+}
+
+
 
 /* END CODE HERE */
