@@ -62,7 +62,7 @@ def add_product():
     
     # Έλεγχος για έγκυρο χρώμα και μέγεθος
     if data['color'] not in valid_colors or data['size'] not in valid_sizes:
-        return jsonify({"error": "Invalid color or size"}), 400
+        return jsonify({"error": "Invalid color or size"}), 401
     
     #αναζητηση προιοντοσ με βαση το ονομα
     existing_product = mongo.db.products.find_one({"name": data['name']})
@@ -81,7 +81,7 @@ def add_product():
     else:
         #εισαγωγη νεου προιοντοσ
         mongo.db.products.insert_one(data)
-        return jsonify({"message": "Product added successfully"}), 200
+        return jsonify({"message": "Product added successfully"}), 201
     
 
 
