@@ -21,23 +21,23 @@
     <div class="container mb-4">
       <div class="row">
         <div class="col">
-          <label class="form-label" for="inputSearch">Search a product</label>
+          <label class="form-label" for="search-form">Search a product</label>
         </div>
       </div>
       <div class="row">
         <div class="col-auto"> 
-          <div class="input-group">
-            <input type="search" class="form-control" id="inputSearch">
+          <form id="search-form" class="input-group">
+            <input type="search" class="form-control" id="search-query">
             <button type="submit" class="btn btn-primary active" id="searchButton">Search</button>
-          </div>
-        </div>
+          </form>
+      </div>
       </div>
     </div>
     
     <div class="container mb-4">
       <table class="table table-bordered">
-        <thead>
-          <h2>Results</h2>
+        <h2>Results</h2>
+         <thead id="results-body">
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Name</th>
@@ -52,35 +52,35 @@
     
     <div class="container mb-4">
       <h2>Add a product</h2>
-      <form>
+      <form id = "add-product-form">
         <div class="row mb-3">
-          <label for="inputname" class="col-sm-2 col-form-label">Name</label>
+          <label for="product-name" class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-10">
-            <input type="text" id="inputname" class="form-control input-small">
+            <input type="text" id="product-name" class="form-control input-small">
           </div>
         </div>
         <div class="row mb-3">
-          <label for="inputproductionyear" class="col-sm-2 col-form-label">Production<br>year</label>
+          <label for="product-production-year" class="col-sm-2 col-form-label">Production<br>year</label>
           <div class="col-sm-10">
-            <input type="text" id="inputproductionyear" class="form-control input-small">
+            <input type="text" id = "product-production-year" class="form-control input-small">
           </div>
         </div>
         <div class="row mb-3">
-          <label for="inputprice" class="col-sm-2 col-form-label">Price</label>
+          <label for="product-price" class="col-sm-2 col-form-label">Price</label>
           <div class="col-sm-10">
-            <input type="text" id="inputprice" class="form-control input-small">
+            <input type="text" id="product-price" class="form-control input-small">
           </div>
         </div>
         <div class="row mb-3">
-          <label for="inputcolor" class="col-sm-2 col-form-label">Color</label>
+          <label for="product-color" class="col-sm-2 col-form-label">Color</label>
           <div class="col-sm-10">
-            <input type="text" id="inputcolor" class="form-control input-small">
+            <input type="text" id="product-color" class="form-control input-small">
           </div>
         </div>
         <div class="row mb-3">
-          <label for="inputsize" class="col-sm-2 col-form-label">Size</label>
+          <label for="product-size" class="col-sm-2 col-form-label">Size</label>
           <div class="col-sm-10">
-            <input type="text" id="inputsize" class="form-control input-small">
+            <input type="text" id="product-size" class="form-control input-small">
           </div>
         </div>
         <div class="row">
@@ -95,36 +95,11 @@
       <p class="text-center text-dark bg-light border-top pt-1 mt-1">Full Name - 0000</p>
     </footer>
 
-    <h1>Products</h1>
-
-    <h2>Search Products</h2>
-    <form id="search-form">
-       <input type="text" id="search-query" placeholder="Search for a product">
-       <button type="submit">Search</button>
-    </form>
-
-    <h2>Search Results</h2>
-    <table id="results-table">
-       <thead>
-          <tr>
-            <th>Name</th>
-            <th>Price</th>
-          </tr>
-       </thead>
-      <tbody id="results-body">
-      </tbody>
-    </table>
-
-    <form id="add-product-form">
-      <label for="product-name">Όνομα προϊόντος:</label>
-      <input type="text" id="product-name" name="product-name">
-      <label for="product-price">Τιμή προϊόντος:</label>
-      <input type="text" id="product-price" name="product-price">
-      <button type="submit">Προσθήκη προϊόντος</button>
-    </form>
-    
     <script src="products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    
+    
   </body>
 </html>
 

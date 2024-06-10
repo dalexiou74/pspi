@@ -46,7 +46,7 @@ def search():
     # END CODE HERE
 
 
-@app.route("/add-product", methods=["POST"])
+@app.route("/add-product", methods=["POST", "GET"])
 def add_product():
     # BEGIN CODE HERE
 
@@ -94,7 +94,7 @@ def content_based_filtering():
 
     data = request.get_json()
 
-    # Εξαγωγή όλων των προϊόντων από τη βάση δεδομένων
+    # Εξαγωγή όλων των προϊόντων από τη βάση 
     products = list(mongo.db.products.find({}, {"_id": 0}))
 
     if not products:
@@ -147,14 +147,14 @@ def crawler():
 
     # Εκκίνηση του WebDriver
     options = webdriver.ChromeOptions()
-    options.add_argument('--headless')  # Εκτέλεση σε headless mode
+    options.add_argument('--headless')  
     driver = webdriver.Chrome(options=options)
 
     try:
         driver.get(url)
         
         # Αναμονή για τη φόρτωση της σελίδας
-        time.sleep(5)  # Δώστε χρόνο στη σελίδα να φορτώσει
+        time.sleep(5)  
         
         # Εύρεση και κλικ στο αντίστοιχο εξάμηνο
         semester_xpath = f'//h4[contains(text(), "Εξάμηνο {semester}")]'
